@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title  data-i18n="page_title">Taxons le carbone, partageons les recettes !</title>
+    <title data-i18n="page_title">Taxons le carbone, partageons les recettes !</title>
     <meta name="description" data-i18n="page_description"
         content="Analysez l'impact distributif de la tarification carbone à travers les groupes de revenus avec des mesures de compensation interactives et des visualisations détaillées.">
     
@@ -61,11 +61,11 @@
                 <div class="config-section">
 
                     <div class="config-content">
-                        <p class="mobile-hint">Testez des valeurs de paramètres et observez leurs effets dans les
+                        <p class="mobile-hint" data-i18n="mobile_hint">Testez des valeurs de paramètres et observez leurs effets dans les
                             graphiques plus bas</p>
 
                         <div class="slider-control">
-                            <div class="slider-label" data-i18n="carbon_price_label">
+                            <div class="slider-label">
                                 <span data-i18n="carbon_price_label">Prix d'une taxe carbone</span>
                             </div>
 
@@ -101,12 +101,12 @@
 
                         <div class="slider-control">
                             <div class="slider-label">
-                                <span  data-i18n="redistribution_label">Usage des recettes : revenu direct ou subventions ? <span class="help-icon" data-i18n-tooltip="redistribution_tooltip"
+                                <span><span data-i18n="redistribution_label">Usage des recettes : revenu direct ou subventions ?</span> <span class="help-icon" data-i18n-tooltip="redistribution_tooltip"
                                         data-tooltip="Une fois les recettes de la taxe carbone collectée, on peut décider du meilleur usage de cet argent. On peut le diviser par le nombre de citoyens et redistribuer à chacun une part (c'est le revenu carbone) ou bien financer des subventions vertes (voir panneau subventions), ou encore mixer les deux options. Ici, pour des raisons de données disponibles, nous modélisons une redistribution uniforme par ménages et non par citoyen, mais le mécanisme s'applique très bien par citoyen ou par résident dans le pays.">?</span></span>
                             </div>
                             <div class="slider-percentages">
-                                <span class="slider-percent-left" id="subsidiesPercent" data-i18n-prefix="sub_prefix">Sub. 0%</span>
-                                <span class="slider-percent-right" id="revenuePercent" data-i18n-prefix="rev_prefix">Revenu 100%</span>
+                                <span class="slider-percent-left" id="subsidiesPercent">Sub. 0%</span>
+                                <span class="slider-percent-right" id="revenuePercent">Revenu 100%</span>
                             </div>
                             <input type="range" class="slider" id="redistributionSlider" min="0" max="100" value="100">
                             <div class="slider-track-fill" id="redistributionTrackFill"></div>
@@ -115,8 +115,8 @@
 
                         <div class="slider-control">
                             <div class="slider-label">
-                                <span data-i18n="low_income_bonus" data-i18n="rural_bonus">Bonus bas revenus <span class="help-icon" data-i18n-tooltip="low_income_tooltip"
-                                       data-i18n-tooltip="rural_tooltip"  data-tooltip="Avec une redistribution uniforme, les bas déciles de revenus sont déjà gagnants, car ils émettent moins en moyenne que les hauts déciles. Néanmoins, on peut vouloir accentuer cette répartition avec un bonus 'bas revenus'. Plus ce bonus est élevé, plus les ménages à bas revenus reçoivent une part importante de la redistribution. Le calcul utilise une pondération progressive qui favorise les déciles inférieurs.">?</span></span>
+                                <span><span data-i18n="low_income_bonus">Bonus bas revenus</span> <span class="help-icon" data-i18n-tooltip="low_income_tooltip"
+                                        data-tooltip="Avec une redistribution uniforme, les bas déciles de revenus sont déjà gagnants, car ils émettent moins en moyenne que les hauts déciles. Néanmoins, on peut vouloir accentuer cette répartition avec un bonus 'bas revenus'. Plus ce bonus est élevé, plus les ménages à bas revenus reçoivent une part importante de la redistribution. Le calcul utilise une pondération progressive qui favorise les déciles inférieurs.">?</span></span>
                             </div>
                             <input type="range" class="slider" id="ponderationSlider" min="0" max="100" value="0">
                             <div class="slider-track-fill" id="ponderationTrackFill"></div>
@@ -124,7 +124,7 @@
 
                         <div class="slider-control">
                             <div class="slider-label">
-                                <span>Bonus zones rurales <span class="help-icon"
+                                <span><span data-i18n="rural_bonus">Bonus zones rurales</span> <span class="help-icon" data-i18n-tooltip="rural_tooltip"
                                         data-tooltip="Compense le surcoût carbone des ménages ruraux (+50% d'émissions en moyenne). Le mécanisme effectue un transfert global depuis la redistribution des habitants des centres-villes (perte homogène) vers les habitants ruraux (gain uniforme par ménage). Comme les ménages ruraux sont plus nombreux dans les bas déciles, ce bonus renforce l'aspect redistributif pro-pauvre. Données : Pottier et al. (2020).">?</span></span>
                             </div>
                             <input type="range" class="slider" id="bonusSlider" min="0" max="100" value="0">
@@ -134,7 +134,7 @@
                             <div class="territory-view-checkbox">
                                 <label>
                                     <input type="checkbox" id="territoryViewCheckbox">
-                                    <span  data-i18n="rural_view">Vue par ruralité (Rural / Banlieue / Centre)</span>
+                                    <span data-i18n="rural_view">Vue par ruralité (Rural / Banlieue / Centre)</span>
                                 </label>
                             </div>
 

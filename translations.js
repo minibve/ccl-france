@@ -34,6 +34,11 @@ const translations = {
     // Vote button
     vote_main: "Je vote",
     vote_sub: "pour cette redistribution",
+    vote_sending: "Envoi...",
+    vote_success_main: "✓ Vote enregistré !",
+    vote_success_sub: "Merci pour votre participation",
+    vote_error_main: "⚠ Erreur",
+    vote_error_sub: "Réessayez",
 
     // Links & buttons
     methodology: "📖 Méthodologie complète",
@@ -42,6 +47,10 @@ const translations = {
     // Legend & chart
     legend_cost: "Coût de la taxe carbone",
     legend_after: "Coût après redistribution",
+    legend_after_colon: "Coût après redistribution :",
+    territory_rural: "Rural",
+    territory_banlieue: "Banlieue",
+    territory_centre: "Centre",
     chart_label: "Impact annuel par ménage (en €)",
     source: "Source: Pottier et al. (2020).",
 
@@ -50,7 +59,7 @@ const translations = {
     subsidies_subtitle: "Répartissez les subventions (Total: 100%)",
 
     // Chart axis / labels used in app.js — access via window.t('key')
-    chart_axis_decile: "Décile de revenus",
+    chart_axis_decile: "Déciles de niveau de vie",
     chart_decile_prefix: "D",
   },
 
@@ -88,6 +97,11 @@ const translations = {
     // Vote button
     vote_main: "I vote",
     vote_sub: "for this redistribution",
+    vote_sending: "Sending...",
+    vote_success_main: "✓ Vote recorded!",
+    vote_success_sub: "Thanks for taking part",
+    vote_error_main: "⚠ Error",
+    vote_error_sub: "Please try again",
 
     // Links & buttons
     methodology: "📖 Full methodology",
@@ -96,6 +110,10 @@ const translations = {
     // Legend & chart
     legend_cost: "Carbon tax cost",
     legend_after: "Cost after redistribution",
+    legend_after_colon: "Cost after redistribution:",
+    territory_rural: "Rural",
+    territory_banlieue: "Suburb",
+    territory_centre: "City centre",
     chart_label: "Annual impact per household (€)",
     source: "Source: Pottier et al. (2020).",
 
@@ -104,7 +122,7 @@ const translations = {
     subsidies_subtitle: "Allocate subsidies (Total: 100%)",
 
     // Chart axis / labels used in app.js — access via window.t('key')
-    chart_axis_decile: "Income decile",
+    chart_axis_decile: "Standard-of-living deciles",
     chart_decile_prefix: "D",
   },
     de: {
@@ -141,23 +159,32 @@ const translations = {
     // Vote button
     vote_main: "Ich stimme",
     vote_sub: "für diese Umverteilung",
- 
+    vote_sending: "Senden...",
+    vote_success_main: "✓ Stimme gezählt!",
+    vote_success_sub: "Vielen Dank für Ihre Teilnahme",
+    vote_error_main: "⚠ Fehler",
+    vote_error_sub: "Bitte erneut versuchen",
+
     // Links & buttons
     methodology: "📖 Vollständige Methodik",
     export_btn: "📥 Daten exportieren (.xlsx)",
- 
+
     // Legend & chart
     legend_cost: "Kosten der CO₂-Steuer",
     legend_after: "Kosten nach Umverteilung",
+    legend_after_colon: "Kosten nach Umverteilung:",
+    territory_rural: "Ländlich",
+    territory_banlieue: "Vorstadt",
+    territory_centre: "Stadtzentrum",
     chart_label: "Jährliche Auswirkung pro Haushalt (€)",
     source: "Quelle: Pottier et al. (2020).",
- 
+
     // Subsidies panel
     subsidies_title: "Subventionsauswahl",
     subsidies_subtitle: "Subventionen aufteilen (Gesamt: 100%)",
- 
+
     // Chart axis / labels used in app.js — access via window.t('key')
-    chart_axis_decile: "Einkommensdezil",
+    chart_axis_decile: "Lebensstandard-Dezile",
     chart_decile_prefix: "D",
   }
 };
